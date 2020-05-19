@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<van-calendar
+  title="选择预约日期"
+  poppable="{{ false }}"
+  show-confirm="{{ true }}"
+  class="calendar"
+  max-date="2020-05-31"
+  row-height="60"
+  bind:confirm="onConfirm"
+/>
+<van-tabbar active="{{ active }}" bind:change="onChange" >
+  <van-tabbar-item icon="home-o">预约场地</van-tabbar-item>
+  <van-tabbar-item icon="search">我的</van-tabbar-item>
+  <van-tabbar-item icon="friends-o">关于</van-tabbar-item>
+</van-tabbar>
